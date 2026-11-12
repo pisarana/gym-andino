@@ -1,0 +1,14 @@
+# Blueprint de Render para Gym Andino (https://render.com/docs/blueprint-spec)
+services:
+  - type: web
+    name: gym-andino
+    runtime: node
+    plan: free
+    region: virginia
+    buildCommand: npm test
+    startCommand: npm start
+    healthCheckPath: /api/salud
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_ENV
+        value: production

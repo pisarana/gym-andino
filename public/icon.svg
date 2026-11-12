@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gym Andino">
+  <rect width="64" height="64" rx="14" fill="#0C0E12"/>
+  <g transform="translate(6.4 3.2) scale(0.8)">
+    <path fill="#E5135E" d="M18 40V34h4v-6h4v-6h4v-8h4v8h4v6h4v6h4v6z"/>
+    <rect x="30" y="14" width="4" height="8" fill="#FFC629"/>
+    <rect x="2" y="39" width="60" height="5" rx="2.5" fill="#F3F4F6"/>
+    <rect x="5" y="29" width="7" height="25" rx="2" fill="#F3F4F6"/>
+    <rect x="12" y="33" width="4" height="17" rx="1.5" fill="#F3F4F6"/>
+    <rect x="52" y="29" width="7" height="25" rx="2" fill="#F3F4F6"/>
+    <rect x="48" y="33" width="4" height="17" rx="1.5" fill="#F3F4F6"/>
+  </g>
+</svg>

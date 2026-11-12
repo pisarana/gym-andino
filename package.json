@@ -1,0 +1,11 @@
+{
+  "name": "gym-andino",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de gimnasio (socios, membresías, asistencia y reportes). Proyecto para el Plan de Pruebas de Software.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=22.13" }
+}
