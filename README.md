@@ -8,6 +8,8 @@ Sistema web para la recepción y administración de un gimnasio: **control de in
 
 Es el software sobre el que se elabora el **Plan de Pruebas de Software** del curso (plantilla de la semana 04).
 
+**Demo en vivo:** <https://gym-andino.onrender.com> (usuarios de prueba más abajo; la primera visita puede tardar unos segundos porque el plan gratuito se duerme sin uso).
+
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https://github.com/pisarana/gym-andino)
 
 | Recepción (kiosko de ingreso) | Reportes del administrador |
