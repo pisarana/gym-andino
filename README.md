@@ -15,6 +15,7 @@ Es el software sobre el que se elabora el **Plan de Pruebas de Software** del cu
 | **Aplicación en producción** | **<https://gym-andino.onrender.com>** |
 | Comprobación de salud | <https://gym-andino.onrender.com/api/salud> |
 | Código fuente | <https://github.com/pisarana/gym-andino> (descarga: **Code → Download ZIP**) |
+| Descarga (versión v1.0.0) | <https://github.com/pisarana/gym-andino/releases/tag/v1.0.0> |
 | Pruebas y evidencias | [docs/pruebas](docs/pruebas/README.md): **55 de 55 casos aprobados**, 33 de ellos en producción |
 | Reporte E2E en producción | [docs/pruebas/reporte-e2e.md](docs/pruebas/reporte-e2e.md) |
 | Hosting | Render, plan gratuito (S/ 0), con despliegue automático en cada commit a `main` |
