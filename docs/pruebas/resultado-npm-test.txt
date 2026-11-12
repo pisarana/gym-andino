@@ -1,0 +1,26 @@
+# Ejecución de pruebas unitarias/integración (npm test)
+# Fecha: 12/11/2026 00:02 (hora de Lima) | Node v24.18.0
+
+✔ CP-01 login correcto devuelve usuario y cookie de sesión (105.917916ms)
+✔ CP-02 login con clave incorrecta devuelve 401 con mensaje genérico (42.828875ms)
+✔ CP-03 se bloquea la cuenta tras 5 intentos fallidos (15.229083ms)
+✔ CP-04 sin sesión la API protegida devuelve 401 (1.805ms)
+✔ CP-05 recepción no puede ver reportes ni crear planes (403) (52.231792ms)
+✔ CP-06 registrar socio valida DNI, teléfono y correo (58.782ms)
+✔ CP-07 no permite DNI duplicado (409) (46.637125ms)
+✔ CP-08 vender membresía calcula fechas y renovación continua (48.647708ms)
+✔ CP-09 método de pago inválido devuelve 400 (44.980291ms)
+✔ CP-10 check-in permitido con membresía vigente y no se repite el mismo día (56.928625ms)
+✔ CP-11 check-in rechazado con membresía vencida o inexistente (53.497541ms)
+✔ CP-12 anular membresía es solo de admin y descuenta de los ingresos (100.275375ms)
+✔ CP-13 reporte valida rango de fechas (47.080167ms)
+✔ CP-14 plan: valida precio y duración; admin puede crear (44.597959ms)
+✔ CP-15 archivos estáticos: index servido y no hay salida del directorio público (3.546833ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 978.439917

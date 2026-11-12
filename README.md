@@ -8,7 +8,18 @@ Sistema web para la recepción y administración de un gimnasio: **control de in
 
 Es el software sobre el que se elabora el **Plan de Pruebas de Software** del curso (plantilla de la semana 04).
 
-**Demo en vivo:** <https://gym-andino.onrender.com> (usuarios de prueba más abajo; la primera visita puede tardar unos segundos porque el plan gratuito se duerme sin uso).
+## Enlaces
+
+| | |
+|---|---|
+| **Aplicación en producción** | **<https://gym-andino.onrender.com>** |
+| Comprobación de salud | <https://gym-andino.onrender.com/api/salud> |
+| Código fuente | <https://github.com/pisarana/gym-andino> (descarga: **Code → Download ZIP**) |
+| Pruebas y evidencias | [docs/pruebas](docs/pruebas/README.md): **55 de 55 casos aprobados**, 33 de ellos en producción |
+| Reporte E2E en producción | [docs/pruebas/reporte-e2e.md](docs/pruebas/reporte-e2e.md) |
+| Hosting | Render, plan gratuito (S/ 0), con despliegue automático en cada commit a `main` |
+
+Los usuarios de prueba están más abajo. La primera visita puede tardar unos segundos, porque el plan gratuito se duerme sin uso.
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https://github.com/pisarana/gym-andino)
 
@@ -59,16 +70,27 @@ La base de datos se crea sola en `data/gym.db` con datos de ejemplo. Para empeza
 | DNI | Socio | Resultado esperado |
 |---|---|---|
 | `45871236` | María Huamán | Puede pasar (membresía vigente) |
-| `71234598` | Jorge Ramírez | Pasa y renueva (vence en 2 días) |
+| `71234598` | Jorge Ramírez | Pasa y renueva (vence en los próximos días) |
 | `40123987` | Lucía Paredes | Acceso denegado (membresía vencida) |
 | `46789123` | Ana Flores | Acceso denegado (sin membresía) |
 | `99999999` | — | DNI no registrado |
 
-## Pruebas automáticas
+## Pruebas
+
+| Nivel | Casos | Resultado |
+|---|---|---|
+| Unitarias e integración (`npm test`) | 15 | ✅ 15 de 15 |
+| Punta a punta en producción (`npm run e2e`) | 33 | ✅ 33 de 33 |
+| Interfaz y responsive en producción (celular y escritorio) | 7 | ✅ 7 de 7 |
+
+El detalle de cada caso, las capturas de evidencia, el registro de los 8 defectos encontrados y corregidos, y las observaciones están en **[docs/pruebas](docs/pruebas/README.md)**.
 
 ```bash
-npm test
+npm test      # pruebas unitarias e integración
+npm run e2e   # pruebas E2E contra producción (genera docs/pruebas/reporte-e2e.md)
 ```
+
+Pruebas unitarias e integración (`test/api.test.js`):
 
 | ID | Caso de prueba |
 |---|---|
@@ -143,7 +165,9 @@ gym-andino/
 ├── server.js          Servidor HTTP y API REST
 ├── db.js              Esquema SQLite y datos de ejemplo
 ├── public/            Interfaz (HTML, CSS, JavaScript, logo)
-├── test/api.test.js   15 pruebas automáticas
+├── test/api.test.js   15 pruebas unitarias e integración
+├── scripts/e2e.mjs    33 pruebas E2E contra producción
+├── docs/pruebas/      Reportes, evidencias y registro de defectos
 ├── docs/capturas/     Capturas de pantalla
 └── render.yaml        Configuración de despliegue
 ```
